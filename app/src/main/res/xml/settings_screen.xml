@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <PreferenceCategory android:title="Notifications">
+        <SwitchPreference
+             android:defaultValue="true"
+             android:key="switch_notification"
+             android:title="Show notification"
+            android:summary="Get notified when you arrive or leave to your destination. It is recommended to leave this on."/>
+        <ListPreference
+            android:dependency="switch_notification"
+            android:dialogTitle="Notify when"
+
+            android:summary="both"
+            android:entries="@array/notify"
+            android:entryValues="@array/notify"
+            android:key="list_notify"
+            android:title="Notify when"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Alarms">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="check_ringtone"
+            android:title="Ringtone"
+           />
+        <RingtonePreference
+            android:dependency="check_ringtone"
+            android:key="ringtone_sound"
+            android:summary="ringtone"
+            android:title="Choose your ringtone" />
+        <SwitchPreference
+            android:key="check_vibrate"
+            android:defaultValue="true"
+            android:summary="Vibrate when you arrive or leave to your destination"
+            android:title="Vibrate"/>
+        <SwitchPreference
+            android:key="check_voice"
+            android:defaultValue="true"
+            android:summary=""
+            android:title="Enable voice reminder"/>
+
+
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Others">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_save_battery"
+            android:title="Save Battery"
+            android:summary="."/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="50dp"
+        android:width="50dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid android:color="@color/colorbtnSignIn"></solid>
+            <stroke android:color="@color/reminderBG" android:width="0dp"></stroke>
+            <corners
+                android:bottomRightRadius="3dp"
+                android:topRightRadius="3dp"/>
+
+        </shape></item>
+        <item
+            android:width="32dp"
+            android:height="32dp"
+            android:gravity="center"
+            android:drawable="@drawable/ic_location_on_"
+            />
+
+
+
+</layer-list>
